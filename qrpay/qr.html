@@ -63,7 +63,7 @@
       document.getElementById("code-all").style.height = s_height +'px';
       document.getElementById("code-all").style.display = "block";
       document.getElementById("qlogo").src = 'https://q2.qlogo.cn/headimg_dl?spec=100&dst_uin=' + setting.uin;
-      $.getJSON('http://r.pengyou.com/fcg-bin/cgi_get_portrait.fcg', {qq: setting.uin}, function(json) {
+      $.getJSON('https://api.isoyu.com/qq/qq.php?qq=', {qq: setting.uin}, function(json) {
           document.title = json.name +' - 商户收款';
           document.getElementById("qnick").innerHTML = json.name;
       });
