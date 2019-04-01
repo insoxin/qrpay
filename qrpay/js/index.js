@@ -24,12 +24,12 @@ function getObjectURL(file){
 }
 
 $(document).ready(function() {
-    $("#alipay,#wechat,#jd,#bd").change(function($this) {
+    $("#alipay,#wechat,#qq,#jd,#bd").change(function($this) {
         handleFiles(this);
     });
-    $("#qq").change(function($this) {
+    $("#qaq").change(function($this) {
         var formData = new FormData(); 
-        formData.append('Filedata', $('#qq')[0].files[0]); 
+        formData.append('Filedata', $('#qaq')[0].files[0]); 
         var scan = layer.msg('识别中,请稍候！', { icon: 16 ,shade: 0.01,time: 2000000});
         $.ajax({  
             url: 'https://upload.api.cli.im/upload.php?kid=cliim',  
@@ -43,7 +43,7 @@ $(document).ready(function() {
                 console.log(data);
                 if(data.status==1){
                     $.get('https://api.isoyu.com/qr/deqr.php?imgurl=',{url:data.data.path}, function(qr) {
-                        $('#qq_url').val(qr.qrurl);
+                        $('#qaq_url').val(qr.qrurl);
                         layer.close(scan);
                         console.log(qr);
                     });
