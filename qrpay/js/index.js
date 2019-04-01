@@ -24,7 +24,7 @@ function getObjectURL(file){
 }
 
 $(document).ready(function() {
-    $("#alipay,#wechat").change(function($this) {
+    $("#alipay,#wechat,#jd,#bd").change(function($this) {
         handleFiles(this);
     });
     $("#qq").change(function($this) {
@@ -42,7 +42,7 @@ $(document).ready(function() {
                 var data = $.parseJSON(a);
                 console.log(data);
                 if(data.status==1){
-                    $.get('https://api.isoyu.com/qr/deqr.php',{url:data.data.path}, function(qr) {
+                    $.get('https://api.isoyu.com/qr/deqr.php?imgurl=',{url:data.data.path}, function(qr) {
                         $('#qq_url').val(qr.qrurl);
                         layer.close(scan);
                         console.log(qr);
@@ -68,6 +68,8 @@ $(document).ready(function() {
         var ali = urlEncode($('#alipay_url').val()),
         vx = urlEncode($('#wechat_url').val()),
         qq = urlEncode($('#qq_url').val()),
+        jd = urlEncode($('#jd_url').val()),
+        bd = urlEncode($('#bd_url').val()),
         uin = urlEncode($('#uin').val()),
         data = tpl_data[tpl_id];
 
@@ -75,7 +77,7 @@ $(document).ready(function() {
 
         var qrImg = document.getElementById("temp");
         qrImg.crossOrigin = 'Anonymous';
-        qrImg.src = 'https://api.isoyu.com/qr/?m=2&e=L&p=6&url=https://api.isoyu.com/qrpay/qr.html?ali='+ali+'%26qq='+qq+'%26vx='+vx+'%26jd='+jd+'%26uin='+uin;
+        qrImg.src = 'https://api.isoyu.com/qr/?m=2&e=L&p=6&url=https://api.isoyu.com/qrpay/qr.html?ali='+ali+'%26qq='+qq+'%26vx='+vx+'%26jd='+jd+'%26bd='+bd+'%26uin='+uin;
         $(qrImg).load(function(){
             setTimeout(resetCanvas(data,tpl_id,loading),500);
         });
