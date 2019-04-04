@@ -31,43 +31,14 @@
 <div class="header">
     <div class="am-g">
         <h1>QR Pay</h1>
-        <p>姬长信收款码在线生成<br>20个模板供您选择,打造最简洁收款服务</p>
+        <p>姬长信收款码在线生成<br>21个模板供您选择,打造最简洁收款服务</p>
     </div>
     <hr>
 </div>
 
 <div class="am-g">
     <div id="content" class="am-u-lg-6 am-u-md-8 am-u-sm-centered">
-        <div class="am-panel am-panel-primary">
-            <div class="am-panel-bd">
-            <div id="contents">
-            <b>1.合并后的收款码有扫码次数和时间限制吗？</b>
-            <p>无限制扫码次数；永久可用。</p>
-            <b>2.合并后的二维码安全吗？</b>
-            <p>安全。技术上，我们只是对五种类型的收款码进行合并，让用户收款使用更方便</p>
-            <b>3.别人扫码付款后，钱打到哪里去了？</b>
-            <p>打到您的个人账户。具体来说：微信扫码付款时，钱打到您的微信钱包里；支付宝扫码付款时，钱打到您的支付宝账户里；QQ扫码付款时，钱打到您的QQ钱包里；京东扫码付款时，钱打到您的京东钱包里；百度扫码付款时，钱打到您的百度钱包里</p>
-            <b>4.为什么微信、QQ扫码后还需要长按识别？</b>
-            <p>微信、QQ接口未开放权限，无法直接调起微信、QQ转账页面，所以需要长按识二维码别进行转账。（给您带来不便还请谅解）目前支付宝接口已开放权限。可以直接扫码付款。</p>
-            <b>5.使用此功能时，支付宝、微信、QQ、京东、百度会向我收取费用吗？</b>
-            <p>不会。此功能是对二维码进行合并，不涉及微信、支付宝、QQ、京东、百度的收费问题。<p>
-            <b>6.在网站上传收款码会泄露用户隐私资料吗？</b>
-            <p>不会。收款码是个人的收款二维码，是客户向对方转账的一种方式，和商家平时向客户展示的收款码是一样的。</p>
-            <b>7.合并后的二维码能通过微信或者支付宝或者QQ或者京东扫码转账码？</b>
-            <p>可以。通过合并后的二维码可以自动识别用户扫码方式，微信扫码则使用微信支付，支付宝扫码则使用支付宝支付，QQ扫码则使用QQ支付,京东扫码则使用京东支付,百度扫码则使用百度支付</p>
-            <b>8.合并二维码对于商家有什么好处？</b>
-            <p>①对于商家来说可免中间手续费，收款直接转入到商家个体账户，不需经过第三方公司提现。</p>
-            <p>②一码在手，随扫随有：只保留一个扫码牌就可以了。</p>
-            <p>③此功能免费使用</p>
-            <b>9.模板更新</b>
-            <p>①目前可使用20套模板(2019.03.30)</p>
-            <p>②看到好看的二维码可以点击底部问题反馈发送</p>
-              </div>
-                GitHub：<a href="https://github.com/insoxin/qrpay" target="_blank"><mark>五合一收款码</mark></a>
-                <br>本站托管在腾讯COS中！<a href="https://api.isoyu.com/pay/" target="_blank">立即赞助</a>
-                <br>部分特殊二维码若识别不出,请到<a href="https://cli.im/deqr" target="_blank">https://cli.im/deqr</a>识别后复制过来继续
-            </div>
-        </div>
+
         <form class="am-form" id="shorturl">
             <div class="am-form-group">
                  <input type="tel" maxlength="11" name="uin" id="uin" placeholder="商户QQ号">     
@@ -262,6 +233,13 @@
                         </label>
                         </div>
                     </li>
+					<li>
+                        <div class="am-thumbnail">
+                        <label class="text-muted">
+                            <img src="https://ws3.sinaimg.cn/large/005BYqpggy1g1qgmcw9bfj30fe0avdg7.jpg" id="tpl_21"/><div class="am-thumbnail-caption"><input type="radio" name="tpl_id" value="21"> PY交易</div>
+                        </label>
+                        </div>
+                    </li>
                 </ul>
             <div class="am-cf">
                 <input type="button" id="shorten" value="立即生成" class="am-btn am-btn-primary am-btn-sm am-fl" data-am-loading="{spinner: 'circle-o-notch',loadingText: '努力生成中...'} resetText: '请查收！'}" />
@@ -269,6 +247,38 @@
         </form>
         <img id="qrcode" class="am-center am-img-thumbnail am-img-responsive" style="width: 206px;display: none;">
         <img id="temp" class="am-hide">
+        <hr>
+              <div class="am-panel am-panel-primary">
+            <div class="am-panel-bd">
+            <div id="contents"><h2 class="am-center">常见问题</h2>
+            <b>1.合并后的收款码有扫码次数和时间限制吗？</b>
+            <p>无限制扫码次数；永久可用。</p>
+            <b>2.合并后的二维码安全吗？</b>
+            <p>安全。技术上，我们只是对五种类型的收款码进行合并，让用户收款使用更方便</p>
+            <b>3.别人扫码付款后，钱打到哪里去了？</b>
+            <p>打到您的个人账户。具体来说：微信扫码付款时，钱打到您的微信钱包里；支付宝扫码付款时，钱打到您的支付宝账户里；QQ扫码付款时，钱打到您的QQ钱包里；京东扫码付款时，钱打到您的京东钱包里；百度扫码付款时，钱打到您的百度钱包里</p>
+            <b>4.为什么微信、QQ扫码后还需要长按识别？</b>
+            <p>微信、QQ接口未开放权限，无法直接调起微信、QQ转账页面，所以需要长按识二维码别进行转账。（给您带来不便还请谅解）目前支付宝接口已开放权限。可以直接扫码付款。</p>
+            <b>5.使用此功能时，支付宝、微信、QQ、京东、百度会向我收取费用吗？</b>
+            <p>不会。此功能是对二维码进行合并，不涉及微信、支付宝、QQ、京东、百度的收费问题。<p>
+            <b>6.在网站上传收款码会泄露用户隐私资料吗？</b>
+            <p>不会。收款码是个人的收款二维码，是客户向对方转账的一种方式，和商家平时向客户展示的收款码是一样的。</p>
+            <b>7.合并后的二维码能通过微信或者支付宝或者QQ或者京东扫码转账码？</b>
+            <p>可以。通过合并后的二维码可以自动识别用户扫码方式，微信扫码则使用微信支付，支付宝扫码则使用支付宝支付，QQ扫码则使用QQ支付,京东扫码则使用京东支付,百度扫码则使用百度支付</p>
+            <b>8.合并二维码对于商家有什么好处？</b>
+            <p>①对于商家来说可免中间手续费，收款直接转入到商家个体账户，不需经过第三方公司提现。</p>
+            <p>②一码在手，随扫随有：只保留一个扫码牌就可以了。</p>
+            <p>③此功能免费使用</p>
+            <b>9.模板更新</b>
+            <p>①目前可使用21套模板(2019.04.04)</p>
+			<p>(21,py交易,由 @海峰 提供</p>
+            <p>②看到好看的二维码可以点击底部问题反馈发送</p>
+              </div>
+                GitHub：<a href="https://github.com/insoxin/qrpay" target="_blank"><mark>五合一收款码</mark></a>
+                <br>本站托管在腾讯COS中！<a href="https://api.isoyu.com/pay/" target="_blank">立即赞助</a>
+                <br>部分特殊二维码若识别不出,请到<a href="https://cli.im/deqr" target="_blank">https://cli.im/deqr</a>识别后复制过来继续
+            </div>
+        </div>
         <hr>
         <p>友情链接：
             <a href="https://blog.isoyu.com" target="_blank">姬长信</a>　|　
@@ -313,6 +323,7 @@
     tpl_data[18]={tpl_w:340,tel_h:600,tpl_src:'img/18.jpg',qr_x:100,qr_y:247,qrsize:140};
     tpl_data[19]={tpl_w:916,tel_h:1491,tpl_src:'img/19.jpg',qr_x:296,qr_y:399,qrsize:322};
     tpl_data[20]={tpl_w:1080,tel_h:1451,tpl_src:'img/20.jpg',qr_x:407,qr_y:823,qrsize:300};
+	tpl_data[21]={tpl_w:554,tel_h:391,tpl_src:'img/21.jpg',qr_x:311,qr_y:116,qrsize:210};
 </script>
 <script src="js/llqrcode.js"></script>
 <script src="js/index.js"></script>
