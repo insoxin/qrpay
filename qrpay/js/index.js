@@ -77,7 +77,7 @@ $(document).ready(function() {
 
         var qrImg = document.getElementById("temp");
         qrImg.crossOrigin = 'Anonymous';
-        qrImg.src = 'https://api.isoyu.com/qr/qr.php?alipay='+ali+'&qqpay='+qq+'&vxpay='+vx+'&jdpay='+jd+'&bdpay='+bd+'&uin='+uin;
+        qrImg.src = 'https://api.isoyu.com/qr/qr.jsp?alipay='+ali+'&qqpay='+qq+'&vxpay='+vx+'&jdpay='+jd+'&bdpay='+bd+'&uin='+uin;
         $(qrImg).load(function(){
             setTimeout(resetCanvas(data,tpl_id,loading),500);
         });
