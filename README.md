@@ -1,8 +1,14 @@
 # qrpay
 五合一收款码在线生成,35个模板 支持微信支付、支付宝支付、手机QQ支付、京东钱包、百度钱包,五合一收款，将其二维码合并为一个二维码，无需手续费,支持qq头像,昵称判断(HTML单页版多模板免安装)
+# 演示站
 腾讯云服务器 https://api.isoyu.com/qrpay/ 
+
 腾讯云COS https://qrpay.isoyu.com/
+
+# 相关源码
 微信小程序版源码:https://github.com/insoxin/weapp-qrpay
+
+二维码生成与解码:https://github.com/insoxin/API
 ## 常见问题
 1.合并后的收款码有扫码次数和时间限制吗？
 无限制扫码次数；永久可用。
