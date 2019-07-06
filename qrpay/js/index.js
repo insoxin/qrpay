@@ -1,3 +1,7 @@
+/* Created by AEINK on 2019-3-31.
+ * Revised by redy on 2019-3-31.
+ */
+
 function urlEncode(String) {
     return encodeURIComponent(String).replace(/'/g,"%27").replace(/"/g,"%22");  
 }
@@ -71,13 +75,14 @@ $(document).ready(function() {
         jd = urlEncode($('#jd_url').val()),
         bd = urlEncode($('#bd_url').val()),
         uin = urlEncode($('#uin').val()),
+        PayPal = urlEncode($('#PayPal').val()),
         data = tpl_data[tpl_id];
 
         if (uin.search(/^[1-9][0-9]{4,}$/) ==-1){layer.msg("请输入正确QQ号码！");return false;}
 
         var qrImg = document.getElementById("temp");
         qrImg.crossOrigin = 'Anonymous';
-        qrImg.src = 'https://api.isoyu.com/qr/qr.jsp?alipay='+ali+'&qqpay='+qq+'&vxpay='+vx+'&jdpay='+jd+'&bdpay='+bd+'&uin='+uin; //https://api.isoyu.com/qr/?m=2&e=L&p=6&url=https://qrpay.isoyu.com/qr.html?ali='+ali+'%26qq='+qq+'%26vx='+vx+'%26jd='+jd+'%26bd='+bd+'%26uin='+uin
+        qrImg.src = 'https://api.isoyu.com/qr/qr.jsp?alipay='+ali+'&qqpay='+qq+'&vxpay='+vx+'&jdpay='+jd+'&bdpay='+bd+'&PayPal='+PayPal+'&uin='+uin; //https://api.isoyu.com/qr/?m=2&e=L&p=6&url=https://qrpay.isoyu.com/qr.html?ali='+ali+'%26qq='+qq+'%26vx='+vx+'%26jd='+jd+'%26bd='+bd+'%26PayPal='+PayPal+'%26uin='+uin
         $(qrImg).load(function(){
             setTimeout(resetCanvas(data,tpl_id,loading),500);
         });
