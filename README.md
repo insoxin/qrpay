@@ -8,6 +8,8 @@
 # 相关源码
 微信小程序版源码:https://github.com/insoxin/weapp-qrpay
 
+收款码合成个人版源码: https://github.com/insoxin/API/tree/master/pay
+
 二维码生成与解码:https://github.com/insoxin/API
 ## 常见问题
 1.合并后的收款码有扫码次数和时间限制吗？
