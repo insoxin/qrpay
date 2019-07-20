@@ -18,7 +18,7 @@
 
 银联支付(UnionPay)
 
-更多?[提个建议](../issues)
+更多?[提个建议](https://github.com/insoxin/qrpay/issues/new)
 ## 常见问题
 1.合并后的收款码有扫码次数和时间限制吗？
 无限制扫码次数；永久可用。
