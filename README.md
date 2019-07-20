@@ -11,6 +11,14 @@
 收款码合成个人版源码: https://github.com/insoxin/API/tree/master/pay
 
 二维码生成与解码:https://github.com/insoxin/API
+
+# 计划功能
+
+连连支付(LianLianPay)
+
+银联支付(UnionPay)
+
+更多?[提个建议](/issues)
 ## 常见问题
 1.合并后的收款码有扫码次数和时间限制吗？
 无限制扫码次数；永久可用。
