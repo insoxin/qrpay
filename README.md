@@ -48,6 +48,7 @@
 ②一码在手，随扫随有：只保留一个扫码牌就可以了。
 
 ③此功能免费使用
+
 9.PayPal怎么提取用户名？
 https://www.paypal.me/insoxin 链接中的insoxin就是您的用户名
 
