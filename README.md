@@ -6,6 +6,8 @@
 腾讯云COS https://qrpay.isoyu.com/
 # 安装
 
+## 本地服务器
+
 GitHub下载压缩包 解压上传qrpay目录即可
 
 ## docker
