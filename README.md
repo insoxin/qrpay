@@ -4,6 +4,21 @@
 腾讯云服务器 https://api.isoyu.com/qrpay/ 
 
 腾讯云COS https://qrpay.isoyu.com/
+# 安装
+
+GitHub下载压缩包 解压上传qrpay目录即可
+
+## docker
+```
+docker pull insoxin/qrpay:latest
+```
+
+```
+docker run -dit --name qrpay -p 80:8080  --restart unless-stopped insoxin/qrpay:latest
+
+```
+
+更多tags 请至https://hub.docker.com/repository/docker/insoxin/qrpay/tags查看
 
 # 相关源码
 微信小程序版源码:https://github.com/insoxin/weapp-qrpay
