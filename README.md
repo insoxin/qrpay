@@ -18,7 +18,7 @@ docker pull insoxin/qrpay:latest
 ```
 2.
 ```
-docker run -dit --name qrpay -p 80:8080  --restart unless-stopped insoxin/qrpay:latest
+docker run -dit --name qrpay -p 8080:80  --restart unless-stopped insoxin/qrpay:latest
 
 ```
 
